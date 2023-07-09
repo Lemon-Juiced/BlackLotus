@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "black_lotus:block/black_lotus"
+  },
+  "render_type": "cutout"
+}

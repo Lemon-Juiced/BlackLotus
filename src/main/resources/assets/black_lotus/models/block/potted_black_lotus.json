@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "black_lotus:block/black_lotus"
+  },
+  "render_type": "cutout"
+}
