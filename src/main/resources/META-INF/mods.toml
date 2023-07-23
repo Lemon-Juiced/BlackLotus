@@ -8,13 +8,12 @@ version="${mod_version}"
 displayName="${mod_name}"
 logoFile="black_lotus.png"
 authors="${mod_authors}"
-
 description='''${mod_description}'''
 
 [[dependencies.${mod_id}]]
     modId="forge"
     mandatory=true
-    versionRange="${forge_version_range}"
+    versionRange="${neo_version_range}"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
