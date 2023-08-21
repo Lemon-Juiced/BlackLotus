@@ -3,6 +3,7 @@ package lemon_juice.black_lotus;
 import lemon_juice.black_lotus.block.ModBlocks;
 import lemon_juice.black_lotus.creativetab.ModCreativeTab;
 import lemon_juice.black_lotus.item.ModItems;
+import lemon_juice.black_lotus.util.ModCompostables;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -38,6 +39,8 @@ public class BlackLotus {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLACK_LOTUS.getId(), ModBlocks.POTTED_BLACK_LOTUS);
+            //Register Compostables
+            ModCompostables.setup(event);
         });
     }
 
